@@ -1,7 +1,7 @@
 import React from "react";
 
 const InputForm = ({ name, placeholder, handler }) => {
-  var inputName = `input-${placeholder}`;
+  var inputName = `input-${name}`;
   return (
     <div className="form-group">
       <label htmlFor={inputName}>{name}</label>

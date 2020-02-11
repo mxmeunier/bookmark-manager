@@ -4,12 +4,11 @@ import { Link } from "@reach/router";
 const Bookmarks = ({ bookmarks, remove }) => {
   return (
     <div>
-      <ul className="list-group mb-4">
+      <ul className="list-group">
         {bookmarks.map((bookmark, index) => (
           <li key={index} className="list-group-item">
-            {`${bookmark.url} | ${bookmark.title} | ${
-              bookmark.author
-            } | ${bookmark.addedDate.toLocaleString()}`}
+            <a href={bookmark.url}>{bookmark.title}</a>
+            {`, ${bookmark.author} , ${bookmark.addedDate.toLocaleString()} `}
             <Link to={`/edit/${index}`}>
               <button className="btn btn-light">Edit</button>
             </Link>
