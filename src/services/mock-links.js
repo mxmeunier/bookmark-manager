@@ -4,14 +4,19 @@ function mockLinks() {
       url: "https://vimeo.com/241891603",
       title: "Bon Voyage",
       author: "Fabio Friedli",
-      addedDate: "08/11/2017"
+      addedDate: "08/11/2017",
+      width: "",
+      height: "",
+      duration: ""
     },
     {
       url:
         "https://www.flickr.com/photos/lordseixas/49491667983/in/explore-2020-02-05/",
       title: "The rescue",
       author: "Lord Seixas",
-      addedDate: "15/01/2020"
+      addedDate: "15/01/2020",
+      width: "",
+      height: ""
     },
     {
       url:
