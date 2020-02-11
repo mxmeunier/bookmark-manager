@@ -9,8 +9,6 @@ import getLinks from "../services/mock-links";
 
 const HomePage = () => {
   var [bookmarks, setBookmarks] = useState(getLinks());
-  // const [currentPage, setCurrentPage] = useState(1);
-  // const [BookmarksPerPage, setBookmarksPerPage] = useState(10);
 
   function getBookmark(index) {
     return bookmarks[index];
@@ -22,8 +20,7 @@ const HomePage = () => {
 
   function removeBookmark(index) {
     if (bookmarks.length == 1) return setBookmarks([]);
-    console.log(index, bookmarks.splice(index - 1, 1));
-    // return setBookmarks(bookmarks.splice(index, 1));
+    return setBookmarks(bookmarks.splice(index, 1));
   }
 
   function updateBookmark(index, bookmark) {
