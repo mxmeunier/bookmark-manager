@@ -59,7 +59,9 @@ const Bookmarks = ({ bookmarks, remove }) => {
               <td>
                 <button
                   className="btn btn-danger"
-                  onClick={() => remove(index)}
+                  onClick={() =>
+                    remove(index + BOOKMARKS_PER_PAGE * (currentPage - 1))
+                  }
                 >
                   X
                 </button>

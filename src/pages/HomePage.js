@@ -19,8 +19,10 @@ const HomePage = () => {
   }
 
   function removeBookmark(index) {
+    var newBookmarks = [...bookmarks];
     if (bookmarks.length == 1) return setBookmarks([]);
-    return setBookmarks(bookmarks.splice(index, 1));
+    newBookmarks.splice(index, 1);
+    return setBookmarks(newBookmarks);
   }
 
   function updateBookmark(index, bookmark) {

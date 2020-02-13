@@ -5,6 +5,7 @@ import Keywords from "./Keywords";
 
 const EditBookmarkForm = ({ index = 0, get, update }) => {
   var [bookmark, setBookmark] = useState(get(index));
+  console.log(bookmark);
   var [keyword, setKeyword] = useState("");
   // Makes bookmark Object iterable with key/value
   var tupleBookmark = Object.entries(bookmark);
