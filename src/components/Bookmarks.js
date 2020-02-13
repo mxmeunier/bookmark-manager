@@ -30,7 +30,10 @@ const Bookmarks = ({ bookmarks, remove }) => {
           {currentBookmarks.map((bookmark, index) => (
             <tr key={index}>
               <td>
-                <img src={bookmark.url} alt={`flickr-${bookmark.title}`}></img>
+                <img
+                  src={bookmark.url}
+                  alt={`bookmark-${bookmark.title}`}
+                ></img>
               </td>
               <td>{bookmark.title}</td>
               <td>{bookmark.author}</td>
