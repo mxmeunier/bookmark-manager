@@ -5,8 +5,8 @@ function mockLinks() {
       title: "Bon Voyage",
       author: "Fabio Friedli",
       addedDate: "08/11/2017",
-      width: "",
-      height: "",
+      width: "630",
+      height: "420",
       duration: ""
     },
     {
@@ -14,16 +14,16 @@ function mockLinks() {
       title: "The rescue",
       author: "Lord Seixas",
       addedDate: "15/01/2020",
-      width: "",
-      height: ""
+      width: "600",
+      height: "400"
     },
     {
       url: "//live.staticflickr.com/65535/49516334612_4b448bc236_h.jpg",
       title: "Red-Necked Grebe",
       author: "Steve Jones",
       addedDate: "15/07/2019",
-      width: "2048",
-      height: "1365"
+      width: "600",
+      height: "400"
     }
   ];
   return bookmarks;
